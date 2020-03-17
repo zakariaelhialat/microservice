@@ -9,7 +9,7 @@ public class ProductController {
 	 @Autowired
 	    private Product productDao;
 
-    //Récupérer la liste des produits
+    //add
     @RequestMapping(value="/Produits", method=RequestMethod.GET)
     public List<Product> listeProduits() {
     	return productDao.findAll();
